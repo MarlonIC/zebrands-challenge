@@ -2,13 +2,13 @@ import json
 from flask import Flask, jsonify
 from dotenv import load_dotenv
 from pathlib import Path
-from Products.infrastructure.rest.create_product import blueprint_create_product
-from Products.infrastructure.rest.update_product import blueprint_update_product
-from Products.infrastructure.rest.delete_product import blueprint_delete_product
-from Products.infrastructure.rest.get_all_product import blueprint_get_all_product
-from Products.infrastructure.rest.get_by_id_product import blueprint_get_by_id_product
-from Products.infrastructure.rest.health import blueprint_health
-from Auth.infrastructure.rest.login import blueprint_login
+from .Products.infrastructure.rest.create_product import blueprint_create_product
+from .Products.infrastructure.rest.update_product import blueprint_update_product
+from .Products.infrastructure.rest.delete_product import blueprint_delete_product
+from .Products.infrastructure.rest.get_all_product import blueprint_get_all_product
+from .Products.infrastructure.rest.get_by_id_product import blueprint_get_by_id_product
+from .Products.infrastructure.rest.health import blueprint_health
+from .Auth.infrastructure.rest.login import blueprint_login
 
 
 
