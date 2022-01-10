@@ -20,6 +20,6 @@ RUN apk --no-cache add --virtual build-dependencies \
 
 RUN apk add --no-cache mariadb-dev build-base
 
-EXPOSE 8000
+EXPOSE 80
 
 ENTRYPOINT ["./gunicorn.sh"]
